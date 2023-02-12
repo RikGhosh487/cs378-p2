@@ -1,0 +1,159 @@
+/* Root Variables */
+:root {
+  --main-orange: #ec7323;
+  --button-blue: #bed5f8;
+  --button-gray: #d4d7dc;
+}
+
+/* Default Styling provided for the assignment */
+body {
+  padding-top: 10px;
+}
+
+/* Flexbox CSS - Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Header Image */
+header img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Subheading with orange text (PC version) */
+.subheading {
+  padding: 50px 30px 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-orange);
+  font: normal normal 400 30pt Arial;
+  text-align: center;
+}
+
+/* Subsubheading with italics (PC version) */
+.subsubheading {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: normal italic 400 25pt Arial;
+}
+
+/* Standard container settings for Bootstrap Grids */
+.container {
+  max-width: 90%;
+  padding: 50px 20px 10px;
+}
+
+/* Padding for outermost rows */
+.row {
+  padding: 20px 0px;
+}
+
+/* Thumbnails for menu items */
+.menu-display {
+  object-fit: cover;
+  width: 90%;
+  max-width: 300px;
+}
+
+/* Inner row padding */
+.col-7 .row {
+  padding: 5px 0px;
+}
+
+/* PC settings for Menu Item names */
+.item-name {
+  font: normal normal 400 30pt Georgia;
+  text-align: left;
+  padding: 0;
+}
+
+/* PC settings for Menu Item prices */
+.item-price {
+  text-align: right;
+  font: normal normal 400 25pt Arial;
+}
+
+/* PC settings for button housing */
+.button {
+  width: 110px;
+  padding: 0;
+}
+
+/* PC settings for ordering buttons (blue color) */
+button {
+  border-radius: 25px;
+  height: 50px;
+  background-color: var(--button-blue);
+}
+
+button.alt {
+  background-color: var(--button-gray);
+}
+
+.sub-housing,
+.add-housing,
+.num-housing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.num-housing {
+  font: normal normal 400 14pt Arial;
+}
+
+.bi {
+  cursor: pointer;
+}
+
+.subtotal {
+  display: flex;
+  align-items: center;
+  font: normal normal 400 15pt Arial;
+}
+
+.clear-btn,
+.order-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Media Queries for smaller devices, used for changing aspect ratio */
+@media only screen and (max-device-width: 768px) {
+  .button {
+    width: 70px;
+  }
+
+  .container {
+    padding-top: 20px;
+  }
+
+  .subheading {
+    padding: 50px 15px 10px 15px;
+    font-size: 17pt;
+  }
+
+  .subsubheading {
+    font-size: 15pt;
+  }
+
+  .item-name {
+    font-size: 16pt;
+  }
+
+  .item-price {
+    font-size: 15pt;
+  }
+
+  button {
+    height: auto;
+    font-size: medium;
+  }
+}

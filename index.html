@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>CS 378 - P2</title>
+  </head>
+  <!-- Implement from below -->
+  <body>
+    <header>
+      <!-- you can add the logo image here -->
+
+      <!-- Added image from the oscampuscafe website -->
+      <img
+        width="520"
+        height="104"
+        src="https://www.oscampuscafe.com/wp-content/uploads/2019/11/os-campus-cafe-logo-2x.png"
+        alt="O's Campus Cafe &amp; Catering"
+        decoding="async"
+        data-lazy-srcset="https://www.oscampuscafe.com/wp-content/uploads/2019/11/os-campus-cafe-logo-2x.png 520w, https://www.oscampuscafe.com/wp-content/uploads/2019/11/os-campus-cafe-logo-2x-300x60.png 300w"
+        data-lazy-sizes="(max-width: 520px) 100vw, 520px"
+        data-lazy-src="https://www.oscampuscafe.com/wp-content/uploads/2019/11/os-campus-cafe-logo-2x.png"
+        data-ll-status="loaded"
+        sizes="(max-width: 520px) 100vw, 520px"
+        srcset="
+          https://www.oscampuscafe.com/wp-content/uploads/2019/11/os-campus-cafe-logo-2x.png        520w,
+          https://www.oscampuscafe.com/wp-content/uploads/2019/11/os-campus-cafe-logo-2x-300x60.png 300w
+        "
+      />
+    </header>
+    <div class="subheading">Delicious, From-Scratch Recipes Close at Hand</div>
+    <div class="subsubheading">The fresh choice of UT!</div>
+
+    <!-- Bootstrap Grids -->
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <img
+            class="menu-display"
+            src="images/mac-and-cheese.jpg"
+            alt="A plate of mac and cheese"
+          />
+        </div>
+        <div class="col-7">
+          <div class="row h-75">
+            <div class="col-9 item-name">mac & cheese</div>
+            <div class="col-3 item-price">$5</div>
+          </div>
+          <div class="row button h-25 w-100 m-0">
+            <div class="col-2 sub-housing p-0 offset-6">
+              <i class="bi bi-dash-circle remove"></i>
+            </div>
+            <div class="col-2 num-housing p-0">0</div>
+            <div class="col-2 add-housing p-0">
+              <i class="bi bi-plus-circle add"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <img
+            class="menu-display"
+            src="images/pasta.jpg"
+            alt="A plate of pasta with red sauce"
+          />
+        </div>
+        <div class="col-7">
+          <div class="row h-75">
+            <div class="col-9 item-name">pasta</div>
+            <div class="col-3 item-price">$8</div>
+          </div>
+          <div class="row-auto"></div>
+          <div class="row button h-25 w-100 m-0">
+            <div class="col-2 sub-housing p-0 offset-6">
+              <i class="bi bi-dash-circle remove"></i>
+            </div>
+            <div class="col-2 num-housing p-0">0</div>
+            <div class="col-2 add-housing p-0">
+              <i class="bi bi-plus-circle add"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <img
+            class="menu-display"
+            src="images/tacos.jpg"
+            alt="A serving of four tacos"
+          />
+        </div>
+        <div class="col col-7">
+          <div class="row h-75">
+            <div class="col-9 item-name">tacos</div>
+            <div class="col-3 item-price">$8</div>
+          </div>
+          <div class="row button h-25 w-100 m-0">
+            <div class="col-2 sub-housing p-0 offset-6">
+              <i class="bi bi-dash-circle remove"></i>
+            </div>
+            <div class="col-2 num-housing p-0">0</div>
+            <div class="col-2 add-housing p-0">
+              <i class="bi bi-plus-circle add"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <img
+            class="menu-display"
+            src="images/enchiladas.jpg"
+            alt="A plate of enchiladas"
+          />
+        </div>
+        <div class="col-7">
+          <div class="row h-75">
+            <div class="col-9 item-name">enchilada</div>
+            <div class="col-3 item-price">$10</div>
+          </div>
+          <div class="row button h-25 w-100 m-0">
+            <div class="col-2 sub-housing p-0 offset-6">
+              <i class="bi bi-dash-circle remove"></i>
+            </div>
+            <div class="col-2 num-housing p-0">0</div>
+            <div class="col-2 add-housing p-0">
+              <i class="bi bi-plus-circle add"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5 p-0 subtotal">
+          Subtotal $
+          <div class="total">0</div>
+        </div>
+        <div class="col-3 offset-1 p-0 order-btn">
+          <button id="order">Order</button>
+        </div>
+        <div class="col-3 p-0 clear-btn">
+          <button class="alt" id="clear">Clear all</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
